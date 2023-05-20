@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İlgi Alanlarım</title>
+    <link rel="stylesheet" href="Main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    
+</head>
+<body class="Anasayfabody"> 
+<div class="container">
+    <div class="navbar">
+        <div class="HalilTUFAN">
+            <a href="Anasayfa.html" >Halil TUFAN</a>
+        </div>
+        <ul>
+            <li><a href="CV.html" >CV</a></li>
+            <li><a href="Istanbul.html">İstanbul</a></li>
+            <li><a href="Mirasımız.html">Mirasımız</a></li>
+            <li><a href="ilgi.html">İlgi Alanlarım</a></li>
+            <li><a href="İletisim.html">İletişim</a></li>
+            <li><a href="Login.html">Giriş Yap</a></li>
+        </ul>
+    </div>
+</div>
+<div id="ilgi-box">
+    <section id="mainilgi">
+        <div class="container">
+            <div class="row">
+                <div class = "col-md-12" id="ilgibody">
+                    
+                    <div class="MovieList">
+
+                    </div>
+                    
+                    
+                </div>
+    
+            </div>
+    
+    
+        </div>
+        </section>
+
+</div>
+</body>
+<script>
+    const MovieList = document.querySelector(".MovieList")
+    const APIKEY = "https://api.themoviedb.org/3/movie/popular?api_key=afca2656cc551632bb3c538c9d52ccc3&language=en-US";
+    const IMAGES_API = 'https://image.tmdb.org/t/p/w1280'
+
+    fetch(APIKEY)
+        .then(response => response.json())
+        .then(data => {
+
+            console.log("data : ", data.results)
+
+            data.results.map(movie => {
+
+                console.log(movie)
+
+                MovieList.innerHTML += ` <div class="movie" >
+                    <p class="movie_title">
+                        ${movie.original_title}
+                    </p>
+                    <img  src=${ IMAGES_API + movie.poster_path }    alt=${movie.original_title}  />
+
+                    <span class="vote_average">${movie.vote_average} </span>
+
+                </div>
+                    `;
+
+
+            })
+
+
+
+
+        }).catch(err => console.log(err));
+</script>
+
+
+
+</html>

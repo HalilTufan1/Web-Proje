@@ -1,0 +1,349 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+.Anasayfabody {
+    margin:0;
+    padding:0;
+    background: url(BackgroundImage.jpg) ;
+    height:100vh;
+    background-size: 100% 100%;
+}
+p {
+    color:#f3f3f3;
+    font-family: sans-serif;
+    font-size: 20px;
+}
+.box {
+    width:450px;
+    text-align: center;
+    padding: 40px;
+    margin: auto;
+}
+
+.box img {
+    width: 192px;
+    height: 256px;
+}
+.box li{
+    display:inline-block;
+    margin: 6px;
+
+}
+.box li a{
+    font-size: 30px;
+    color:#f3f3f3;
+}
+.box li a:hover{
+    color:#90A4AE;
+}
+.box p a{
+    color:#f3f3f3;
+}
+.box p a:hover{
+    color:#90A4AE;
+}
+.container .navbar{
+    width: 100%;
+    height: 80px;
+    background: rgba(5, 30, 58, 0.4);
+
+}
+
+.navbar .HalilTUFAN{
+    display: inline-block;
+    margin-left:50px;
+    margin-top: 20px;
+}
+.navbar .HalilTUFAN a{
+    text-decoration:none;
+    font-size: 30px;
+    font-family: sans-serif;
+    color:#f3f3f3;
+}
+.navbar ul{
+    float: right;
+    margin-right:20px
+}
+
+.navbar ul li{
+    list-style: none;
+    display:inline-block;
+    margin:0 8px;
+    line-height: 80px;
+
+}
+
+.navbar ul li a{
+    color:white;
+    text-decoration:none;
+    font-size: 20px;
+    padding: 6px 13px;
+    font-family: Roboto;
+
+}
+.navbar ul li a:hover{
+    background: #90A4AE;
+    border-radius: 2px;
+
+}
+
+
+
+.loginbody {
+    font-family: sans-serif;
+    color:black;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.CV-box 
+{
+    margin-top: 10px;
+    margin-left: 60px;
+    color:#f3f3f3;
+    
+}
+
+.yazi
+{
+    color:#f3f3f3;
+}
+
+.cv-baslik
+{
+    font-size: 35px;
+    font-family: sans-serif;
+}
+
+.yazi
+    {
+    font-family: sans-serif;
+}
+
+.hedef-baslik,
+.egitimbaslik,
+.Kisaca-ben
+{
+    font-size: 20px;
+}
+
+.hedef,
+.egitim-yazi1,
+.egitim-yazi2,
+.yazilim-yazi,
+.diller-yazi,
+.referanslar-yazi,
+.yazi-iletisim,
+.Ben-yazi
+{
+    margin-left: 10px;
+    font-size: 15px;
+}
+.egitim-baslik1,
+.egitim-baslik2
+{
+    font-size:15px;
+    color:#90A4AE;
+}
+
+.beceriler
+{
+    color: aquamarine;
+    font-size: 20px;
+}
+.yazilim,
+.diller,
+.referanslar,
+.cv-iletisim
+{
+    font-size: 15px;
+}
+
+
+.box-iletisim {
+    width:900px;
+    text-align:center;
+    padding: 130px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(5, 30, 58, 0.4);
+}
+
+#text
+{
+    border-radius: 6px;
+    width: 980px;
+    height: 20px;
+    margin-left: auto;
+    padding-top:5px;
+    text-align: left;
+}
+
+#email
+{
+    border-radius: 6px;
+    width: 980px;
+    height: 20px;
+    margin-top: 10px;
+    margin-left: auto;
+    padding-top:5px;
+    text-align: left;   
+}
+
+#message
+{
+    border-radius: 6px;
+    width: 980px;
+    height: 300px;
+    margin-top: 10px;
+    margin-left: auto;
+    padding-top:5px;
+    text-align: left; 
+}
+#box-iletisim-yazi
+{
+    font-size: 30px;
+    margin-top: -50px;
+    margin-bottom: 10px;
+}
+
+#send
+{
+    margin-right: 200px ;
+    font-family: sans-serif ;
+}
+
+#Istanbul-box
+{
+    width:900px;
+    height: 1490px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(5, 30, 58, 0.4);
+    color: aliceblue;
+}
+#istanbul1
+{
+    width:300px;
+    text-align: left;
+}
+#istanbul2
+{
+    width:550px;
+}
+#İstanbul{
+    text-align: center;
+}
+#slider{
+    margin-left:15%;
+}
+#ilgibody{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+.MovieList {
+    /* border: blueviolet solid 2px; */
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.MovieList .movie {
+    /* border: red solid 2px; */
+    position: relative;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+.movie .vote_average {
+    position: absolute;
+    top: 6px;
+    left: 10px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25px;
+    font-size: 1rem;
+    opacity: 0;
+    padding: 6px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: white;
+    z-index: 5;
+    border-radius: 50%;
+    background-color: rgb(22, 230, 22);
+}
+.MovieList .movie img {
+    width: 200px;
+    height: 280px;
+}
+
+.movie .movie_title {
+    color: white;
+    position: absolute;
+    bottom: -7px;
+    height: 15px;
+    padding: 5px;
+    font-family: 'Franklin Gothic Medium', 'Arial Nar', Arial, sans-serif;
+    z-index: 8;
+    
+    width: 100%;
+    transition: 350ms ease;
+    text-align: center;
+    opacity: 0;
+    padding-bottom: 10px;
+}
+
+.MovieList .movie:hover .movie_title {
+    opacity: 1;
+}
+
+.MovieList .movie:hover .vote_average {
+    opacity: 1;
+}
+#ilgi-box
+{
+        width:auto;
+        text-align: center;
+        padding: 40px;
+        margin: auto;
+}
+
+#miras
+{
+    width:900px;
+    height: 460px;
+    padding: 40px;
+    margin: auto;
+    margin-top: 50px;
+    background-color: rgba(5, 30, 58, 0.4);
+    color: aliceblue;
+    font-family: sans-serif;
+}
+#Baslik
+{
+    text-align: center;
+}
+#fatih_terim
+{
+    width:533px;
+    height: 400px;
+}
+#didier
+{
+    width: 500px;
+}
+#icardi
+{
+    width: 540px;
+    height:524px;
+}
+
