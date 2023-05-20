@@ -1,2 +1,2 @@
-# My-CV-and-My-Home
+# Web Proje
 Web Teknolojileri 1.Proje
